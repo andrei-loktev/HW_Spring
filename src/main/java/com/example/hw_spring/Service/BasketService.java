@@ -13,10 +13,11 @@ import java.util.List;
 public class BasketService {
     private final List<Long> ids = new ArrayList<>();
 
-    public void add(List<Long> ids){
+    public void add(List<Long> ids) {
         this.ids.addAll(ids);
     }
-    public List<Long> getAll(){
+
+    public List<Long> getAll() {
         return Collections.unmodifiableList(ids);
     }
 }
